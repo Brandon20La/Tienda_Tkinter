@@ -43,6 +43,8 @@ class Productos:
         self.boton_registrar = Productos_menu.add_command(label="Registrar", command=self.widgets_crud, image=self.img_registrar, compound=LEFT)
         self.boton_buscar = Productos_menu.add_command(label="Buscar", command=self.widgets_buscador, image=self.img_buscar, compound=LEFT)
         self.boton_informacion = Informacion_menu.add_command(label="Informacion del sistema", command=self.widgets_informacion, image=self.img_informacion, compound=LEFT)
+        self.boton_clientes = Clientes_menu.add_command(label="Registrar", compound=LEFT)
+
 
          # Widgets del menú
         self.label_titulo_crud = LabelFrame(ventana_productos)
