@@ -10,7 +10,7 @@ import sqlite3
 
 
 class Login:
-    # db_name = k¿
+    db_name = 'bd_proyecto_2560152.db'
     #constructor de la clase
     def __init__(self,ventana_productos):
         pass
