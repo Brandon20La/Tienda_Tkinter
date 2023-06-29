@@ -87,6 +87,7 @@ class Login:
             dato = self.validar_login(usuario, password)
             if(dato != []):
                 messagebox.showinfo("Bienvenido/a", "Datos ingresados correctamente")
+                
                 self.productos()
             else:
                 messagebox.showerror("ERROR DE INGRESO", "Usuario o contraseña incorrectos")
@@ -96,6 +97,10 @@ class Login:
             return True
         else:
             messagebox.showerror("ERROR DE INGRESO", "Ingrese el formulario completo")
+            
+    def productos(self):
+        ventana_login.destroy()
+        call([sys.executable, 'productos.py'])
     
     def validar_login(self,usuario,password):
         with sqlite3.connect(self.db_name) as conexion:
